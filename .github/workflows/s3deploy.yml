@@ -1,4 +1,4 @@
-name: Deploy to S3 (OIDC)
+name: Deploy to S3 and Invalidate CloudFront
 
 on:
   push:
