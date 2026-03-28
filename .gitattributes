@@ -1,0 +1,10 @@
+# Handle line endings automatically for text files
+* text=auto
+
+# Ensure shell scripts always use LF (so they don't break on Linux/EC2)
+*.sh text eol=lf
+
+# Treat PDFs and images as binary (don't touch them)
+*.pdf binary
+*.jpg binary
+*.png binary
