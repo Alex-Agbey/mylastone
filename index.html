@@ -3,114 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Torgboshie | DevOps Engineer</title>
+    <title>DevOps Portfolio | Assignment</title>
     <style>
-        :root {
-            --primary: #2563eb;
-            --dark: #1e293b;
-            --light: #f8fafc;
-        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            color: var(--dark);
-            background-color: var(--light);
-        }
-        header {
-            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
         }
         .container {
-            max-width: 800px;
-            margin: -50px auto 50px;
-            background: white;
-            padding: 2rem;
+            background: #fff;
+            padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 5px solid #232f3e; /* AWS Blue/Black */
         }
-        h1 { margin: 0; font-size: 2.5rem; }
-        .subtitle { color: #94a3b8; font-size: 1.2rem; margin-top: 0.5rem; }
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 1.5rem;
-            flex-wrap: wrap;
-        }
-        .contact-item { font-weight: 500; color: var(--primary); }
-        section { margin-top: 2rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 2rem; }
-        section:last-child { border: none; }
-        h2 { color: var(--primary); border-left: 4px solid var(--primary); padding-left: 10px; }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 10px;
-            margin-top: 1rem;
-        }
-        .skill-tag {
-            background: #eff6ff;
-            color: #1e40af;
-            padding: 8px;
-            border-radius: 4px;
+        header {
             text-align: center;
-            font-size: 0.9rem;
-            border: 1px solid #dbeafe;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+        h1 { color: #232f3e; margin: 0; }
+        .badge {
+            background: #ff9900;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            padding: 20px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+        }
+        .instructor { border-left: 4px solid #007bff; }
+        .student { border-left: 4px solid #28a745; }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Alex Torgboshie</h1>
-    <div class="subtitle">DevOps Engineer | Infrastructure Automation</div>
-    <div class="contact-info">
-        <span class="contact-item">📍 Ghana</span>
-        <span class="contact-item">📞 0545878766</span>
-        <span class="contact-item">✉️ gbago@gmail.com</span>
-    </div>
-</header>
+    <div class="container">
+        <header>
+            <h1>Nautilus DevOps Project</h1>
+            <span class="badge">Deployed via GitHub Actions (OIDC)</span>
+        </header>
 
-<div class="container">
-    <section>
-        <h2>Professional Summary</h2>
-        <p>
-            A results-driven DevOps Engineer with a unique background in Management Studies from the 
-            University of Cape Coast. I bridge the gap between business logic and technical infrastructure, 
-            focusing on automating deployment pipelines, managing cloud resources, and ensuring 
-            system scalability.
-        </p>
-    </section>
+        <section>
+            <p>This application is part of a technical assignment focused on mastering <strong>Dockerization, AWS ECR, and ECS (EC2)</strong> deployment pipelines.</p>
+        </section>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>University of Cape Coast</strong><br>
-        Bachelor of Management Studies | Graduated 2023</p>
-    </section>
+        <div class="profile-grid">
+            <div class="card instructor">
+                <h3>The Instructor</h3>
+                <p><strong>Sir Donatus</strong></p>
+                <p>Guiding the next generation of DevOps Engineers through practical, hands-on infrastructure lab exercises.</p>
+            </div>
 
-    <section>
-        <h2>Technical Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill-tag">AWS (EC2/ECR/ECS)</div>
-            <div class="skill-tag">Docker & Containers</div>
-            <div class="skill-tag">GitHub Actions</div>
-            <div class="skill-tag">CI/CD Pipelines</div>
-            <div class="skill-tag">Linux Admin</div>
-            <div class="skill-tag">Infrastructure as Code</div>
-            <div class="skill-tag">OIDC Security</div>
-            <div class="skill-tag">Kubernetes</div>
+            <div class="card student">
+                <h3>The Engineer</h3>
+                <p><strong>DevOps Learner</strong></p>
+                <p>Actively building scalable cloud solutions and implementing secure CI/CD workflows using OIDC authentication.</p>
+            </div>
         </div>
-    </section>
 
-    <section>
-        <h2>Projects</h2>
-        <p><strong>Nautilus Project & xFusionCorp Labs</strong><br>
-        Simulated complex DevOps environments including server hardening, backup automation 
-        scripting, and containerized deployments using AWS ECS and Fargate.</p>
-    </section>
-</div>
+        <footer>
+            <p>Infrastructure: AWS ECS (EC2) | Registry: Amazon ECR</p>
+            <p>&copy; 2026 | Automated Deployment Pipeline</p>
+        </footer>
+    </div>
 
 </body>
 </html>
